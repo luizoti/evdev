@@ -154,13 +154,6 @@ class InputDevice(EventIO):
         #: The number of force feedback effects the device can keep in its memory.
         self.ff_effects_count = _input.ioctl_EVIOCGEFFECTS(self.fd)
 
-    def __del__(self):
-        if hasattr(self, 'fd') and self.fd is not None:
-            try:
-                self.close()
-            except OSError:
-                pass
-
     def _capabilities(self, absinfo=True):
         res = {}
 
