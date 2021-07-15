@@ -2,6 +2,14 @@ Changelog
 ---------
 
 
+
+1.4.1 (Jul 15, 2021)
+====================
+
+- Fix --> ImportError: sys.meta_path is None.
+
+
+
 1.4.0 (Jan 16, 2021)
 ====================
 
